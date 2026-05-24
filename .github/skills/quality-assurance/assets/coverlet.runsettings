@@ -1,0 +1,44 @@
+---
+description: "Coverage Target: 90%"
+---
+
+# Code Coverage Configuration
+
+## Coverlet Settings (runsettings)
+
+For fine-grained control over what gets measured.
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<RunSettings>
+  <DataCollectionRunSettings>
+    <DataCollectors>
+      <DataCollector friendlyName="XPlat Code Coverage">
+        <Configuration>
+          <Format>opencover</Format>
+          <Exclude>[*Tests]*,[*Benchmarks]*</Exclude>
+          <IncludeLineRate>true</IncludeLineRate>
+          <IncludeBranchRate>true</IncludeBranchRate>
+          <DeterministicOrder>true</DeterministicOrder>
+        </Configuration>
+      </DataCollector>
+    </DataCollectors>
+  </DataCollectionRunSettings>
+</RunSettings>
+```
+
+## Usage
+
+```bash
+dotnet test --settings coverage.runsettings
+```
+
+## Thresholds by Module
+
+| Module | Minimum | Target |
+|--------|---------|--------|
+| TermStructure (main) | 85% | 95% |
+| TermStructure.Builders | 90% | 98% |
+| TermStructure.Strategies | 90% | 98% |
+| TermStructure.Services | 85% | 90% |
+| TermStructure.Models | 80% | 85% |

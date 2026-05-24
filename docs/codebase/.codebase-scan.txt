@@ -1,0 +1,141 @@
+
+=== DIRECTORY TREE (max depth 3, source files only) ===
+.DS_Store
+.agents
+.agents/skills
+.agents/skills/acquire-codebase-knowledge
+.agents/skills/acquire-codebase-knowledge/SKILL.md
+.agents/skills/acquire-codebase-knowledge/assets
+.agents/skills/acquire-codebase-knowledge/references
+.agents/skills/acquire-codebase-knowledge/scripts
+.github
+.github/ISSUE_TEMPLATE
+.github/ISSUE_TEMPLATE/bug_report.md
+.github/Instructions
+.github/Instructions/csharp-solid-principles.instructions.md
+.github/agents
+.github/agents/test-expert.agent.md
+.github/skills
+.github/skills/project-documentation
+.github/skills/project-documentation/SKILL.md
+.github/skills/project-documentation/references
+.github/skills/project-documentation/scripts
+.github/skills/project-documentation/templates
+.github/skills/quality-assurance
+.github/skills/quality-assurance/SKILL.md
+.github/skills/quality-assurance/assets
+.github/skills/quality-assurance/references
+.github/skills/quality-assurance/scripts
+.github/workflows
+.github/workflows/ci.yml
+.vscode
+.vscode/mcp.json
+README.md
+TermStructure
+TermStructure/Builders
+TermStructure/Builders/CurveBuilderDispatcher.cs
+TermStructure/Builders/RateCurveBuilder.cs
+TermStructure/Builders/TermStructure.Tester.code-workspace
+TermStructure/Builders/YieldCurveBuilder.cs
+TermStructure/Models
+TermStructure/Models/BondQuote.cs
+TermStructure/Models/FredModels.cs
+TermStructure/Models/InterestRate.cs
+TermStructure/Models/YieldPoint.cs
+TermStructure/Services
+TermStructure/Services/FredDataFetcher.cs
+TermStructure/Services/MarketDataFetcher.cs
+TermStructure/Strategies
+TermStructure/Strategies/BuildingStrategies
+TermStructure/Strategies/BuildingStrategies/BootstrapCurveBuildingStrategy.cs
+TermStructure/Strategies/BuildingStrategies/ICurveBuildingStrategy.cs
+TermStructure/Strategies/BuildingStrategies/LinearCurveBuildingStrategy.cs
+TermStructure/Strategies/BuildingStrategies/NelsonSiegelCurveBuildingStrategy.cs
+TermStructure/Strategies/InterpolationStrategies
+TermStructure/Strategies/InterpolationStrategies/IInterpolationStrategy.cs
+TermStructure/Strategies/InterpolationStrategies/LinearInterpolationStrategy.cs
+TermStructure/TermStructure.csproj
+TermStructure.Tester
+TermStructure.Tester/Program.cs
+TermStructure.Tester/TermStructure.Tester.csproj
+TermStructure.Tests
+TermStructure.Tests/FakeHttpHandler.cs
+TermStructure.Tests/RateCurveBuilderTests.cs
+TermStructure.Tests/TermStructure.Tests.csproj
+TermStructure.Tests/UnitTest1.cs
+docs
+docs/codebase
+docs/codebase/.codebase-scan.txt
+
+=== STACK DETECTION (manifest files) ===
+No recognized manifest files found in project root.
+
+=== ENTRY POINTS ===
+No common entry points found. Check 'main' or 'scripts.start' in manifest files above.
+
+=== LINTING AND FORMATTING CONFIG ===
+No linting or formatting config files found in project root.
+
+=== ENVIRONMENT VARIABLE TEMPLATES ===
+No .env.example or .env.template found. Identify required environment variables by searching the code and config for environment variable reads.
+
+=== TODO / FIXME / HACK (production code only, test dirs excluded) ===
+.agents/skills/acquire-codebase-knowledge/scripts/scan.py:28: TODO_LIMIT = 60
+.agents/skills/acquire-codebase-knowledge/scripts/scan.py:291: """Search for TODO/FIXME/HACK comments."""
+.agents/skills/acquire-codebase-knowledge/scripts/scan.py:291: """Search for TODO/FIXME/HACK comments."""
+.agents/skills/acquire-codebase-knowledge/scripts/scan.py:291: """Search for TODO/FIXME/HACK comments."""
+.agents/skills/acquire-codebase-knowledge/scripts/scan.py:293: patterns = ["TODO", "FIXME", "HACK"]
+.agents/skills/acquire-codebase-knowledge/scripts/scan.py:293: patterns = ["TODO", "FIXME", "HACK"]
+.agents/skills/acquire-codebase-knowledge/scripts/scan.py:293: patterns = ["TODO", "FIXME", "HACK"]
+.agents/skills/acquire-codebase-knowledge/scripts/scan.py:320: return todos[:TODO_LIMIT]
+.agents/skills/acquire-codebase-knowledge/scripts/scan.py:617: # TODOs
+.agents/skills/acquire-codebase-knowledge/scripts/scan.py:620: print_section("TODO / FIXME / HACK (production code only, test dirs excluded)", todos, output_file)
+.agents/skills/acquire-codebase-knowledge/scripts/scan.py:620: print_section("TODO / FIXME / HACK (production code only, test dirs excluded)", todos, output_file)
+.agents/skills/acquire-codebase-knowledge/scripts/scan.py:620: print_section("TODO / FIXME / HACK (production code only, test dirs excluded)", todos, output_file)
+.agents/skills/acquire-codebase-knowledge/scripts/scan.py:622: print_section("TODO / FIXME / HACK (production code only, test dirs excluded)", ["None found."], output_file)
+.agents/skills/acquire-codebase-knowledge/scripts/scan.py:622: print_section("TODO / FIXME / HACK (production code only, test dirs excluded)", ["None found."], output_file)
+.agents/skills/acquire-codebase-knowledge/scripts/scan.py:622: print_section("TODO / FIXME / HACK (production code only, test dirs excluded)", ["None found."], output_file)
+
+=== GIT RECENT COMMITS (last 20) ===
+No commits found.
+
+=== HIGH-CHURN FILES (last 90 days, top 20) ===
+None found.
+
+=== MONOREPO SIGNALS ===
+No monorepo signals detected.
+
+=== CODE METRICS ===
+Total files scanned: 50
+Total lines of code: 2135
+
+Files by language:
+  Other: 30
+  C#: 19
+  Python: 1
+
+Top 10 largest files:
+.agents/skills/acquire-codebase-knowledge/scripts/scan.py: 23.2KB
+TermStructure.Tests/RateCurveBuilderTests.cs: 19.3KB
+README.md: 13.6KB
+.github/skills/project-documentation/SKILL.md: 10.8KB
+.agents/skills/acquire-codebase-knowledge/SKILL.md: 9.1KB
+.github/agents/test-expert.agent.md: 6.8KB
+TermStructure/Strategies/BuildingStrategies/NelsonSiegelCurveBuildingStrategy.cs: 6.7KB
+.github/skills/quality-assurance/SKILL.md: 5.9KB
+.agents/skills/acquire-codebase-knowledge/references/stack-detection.md: 5.5KB
+.github/Instructions/csharp-solid-principles.instructions.md: 5.2KB
+
+=== CI/CD PIPELINES ===
+CI/CD: GitHub Actions
+
+=== CONTAINERS & ORCHESTRATION ===
+No containerization configs detected.
+
+=== SECURITY & COMPLIANCE ===
+No security configs detected.
+
+=== PERFORMANCE & TESTING ===
+No performance testing configs detected.
+
+=== SCAN COMPLETE ===
