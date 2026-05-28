@@ -1,0 +1,9 @@
+{
+    "chat.tools.terminal.autoApprove": {
+        "git add": true,
+        "git commit": true,
+        "git push": true,
+        "dotnet test": true,
+        "git restore": true
+    }
+}
