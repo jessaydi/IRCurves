@@ -40,10 +40,13 @@ jobs:
             nuget-packages-${{ runner.os }}-
 
       - name: Restore dependencies
-        run: dotnet restore
+        run: dotnet restore TermStructure/TermStructure.csproj
 
-      - name: Build solution
-        run: dotnet build --configuration Release --no-restore
+      - name: Build main library
+        run: dotnet build TermStructure/TermStructure.csproj --configuration Release --no-restore
+
+      - name: Build tests
+        run: dotnet build TermStructure.Tests/TermStructure.Tests.csproj --configuration Release --no-restore
 
       - name: Run tests
         run: dotnet test TermStructure.Tests/TermStructure.Tests.csproj --configuration Release --no-restore --verbosity minimal
